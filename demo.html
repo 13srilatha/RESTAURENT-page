@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: 0;
+        }
+
+        .left-container, .right-container {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .left-container {
+            background-color: #ddd;
+            text-align: center;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .right-container {
+            background-color: #333;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .overlay-text {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left-container">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Responsive Image">
+        <div class="image-overlay">
+            <div class="overlay-text">Order</div>
+            <div class="overlay-text">Menu</div>
+            <div class="overlay-text">Home</div>
+            <div class="overlay-text">About</div>
+            <div class="overlay-text">Contact</div>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <h1>Welcome!</h1>
+        <p>SHINE RESTAURANT</p>
+        <h4>"One cannot think well, love well, sleep well, if one has not dined well" - DINE WELL</h4>
+        <h2>Reservation</h2>
+        <form action="" method="post">
+            <input type="button" value="Start Now">
+        </form>
+    </div>
+
+</body>
+</html>
